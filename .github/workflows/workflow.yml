@@ -34,6 +34,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     # deploys to the world
+    needs: test
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
